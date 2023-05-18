@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "314420788394",
+    "project_id": "calvarybookcenter-f21fc",
+    "storage_bucket": "calvarybookcenter-f21fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314420788394:android:9af00e3142eeb996eb64d3",
+        "android_client_info": {
+          "package_name": "calvary.bc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "314420788394-448t1gmqv6dmmlji6diqv8foijar2uii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBagYScubUAn4PWmBk7MN8u-zm3jEOu8Yo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "314420788394-448t1gmqv6dmmlji6diqv8foijar2uii.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "314420788394-g3h1bj0tnlh8639vdpkmvvcuae7bjoc3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.calvary.bookcenter"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314420788394:android:6a7cfad38dfbcc70eb64d3",
+        "android_client_info": {
+          "package_name": "com.cavary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "314420788394-448t1gmqv6dmmlji6diqv8foijar2uii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBagYScubUAn4PWmBk7MN8u-zm3jEOu8Yo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "314420788394-448t1gmqv6dmmlji6diqv8foijar2uii.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "314420788394-g3h1bj0tnlh8639vdpkmvvcuae7bjoc3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.calvary.bookcenter"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

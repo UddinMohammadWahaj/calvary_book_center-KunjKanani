@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>314420788394-g3h1bj0tnlh8639vdpkmvvcuae7bjoc3.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.314420788394-g3h1bj0tnlh8639vdpkmvvcuae7bjoc3</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDpP9D6_yGAHw5O6XfgJeXVnOjWlq6xV4I</string>
+	<key>GCM_SENDER_ID</key>
+	<string>314420788394</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.calvary.bookcenter</string>
+	<key>PROJECT_ID</key>
+	<string>calvarybookcenter-f21fc</string>
+	<key>STORAGE_BUCKET</key>
+	<string>calvarybookcenter-f21fc.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:314420788394:ios:46cf1220fb31f599eb64d3</string>
+</dict>
+</plist>

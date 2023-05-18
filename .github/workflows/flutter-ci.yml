@@ -1,0 +1,46 @@
+name: Flutter CI
+
+on:
+  push:
+    branches:
+      - develop-ci
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: subosito/flutter-action@v2.4.0
+        with:
+          channel: "stable"
+          flutter-version: "3.7.6"
+      - run: flutter pub get
+      - run: flutter build apk
+
+      - name: Upload to artifact
+        uses: actions/upload-artifact@v1
+        with:
+          name: calvary-app-release
+          path: build/app/outputs/flutter-apk/app-release.apk
+      - name: Upload to gdrive
+        uses: adityak74/google-drive-upload-git-action@main
+        with:
+          credentials: ${{ secrets.GDRIVE_SECRET }}
+          filename: "build/app/outputs/flutter-apk/app-release.apk"
+          folderId: ${{ secrets.GDRIVE_CICD_FOLDER_ID }}
+          name: "calvary-app-profile.apk"
+          overwrite: "true"
+          mimetype: application/vnd.android.package-archive
+
+  SendingApk:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Sending Mail
+        uses: fjogeleit/http-request-action@v1.9.2
+        with:
+          url: "https://ci-cd-mailer.onrender.com/sendMail"
+          method: "POST"
+          data: '{"companyLogoUrl": "https://res.cloudinary.com/dmxopx7ab/image/upload/v1679313585/ci_cd/calvary_qv0wti.png","appLink": "https://drive.google.com/file/d/1-j4y2JErpGjSuk4lIvEpSza33OcB1cy4/view?usp=share_link","subject": "LATEST CALVARY APK","to": ["kunjkanani511@gmail.com", "rakesh@technodreams.in", "sujay@technodreams.in", "rk@technodreams.in", "sairam@technodreams.in", "azra90068@gmail.com"]}'
+#
